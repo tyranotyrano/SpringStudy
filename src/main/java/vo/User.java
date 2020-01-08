@@ -5,8 +5,16 @@ public class User {
     String name;
     String password;
 
-    public User() {
+    /**
+     * 자바빈 규약을 따르는 클래스에 생성자를 명시적으로 추가한 경우,
+     * 반드시 디폴트 생성자를 정의해야한다.
+     * */
+    public User() {}
 
+    public User(String id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
     }
 
     public String getId() {
